@@ -1,3 +1,10 @@
+---
+# Der YAML-Frontmatter-Block
+title: "Meine tolle neue Homepage-Seite3"
+date: "2025-10-02"
+author: "Max Mustermann"
+---
+
 # Tabelle über die beliebtheit von Sprachen
 
 |Name               | Prozent            | veröffentlicht am

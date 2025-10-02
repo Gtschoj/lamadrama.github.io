@@ -1,3 +1,10 @@
+---
+# Der YAML-Frontmatter-Block
+title: "Meine tolle neue Homepage-Seite 2"
+date: "2025-10-02"
+author: "Max Mustermann"
+---
+
 # Willkommen auf Seite 2
 
 ## Unsortierte Liste
