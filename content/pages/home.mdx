@@ -1,30 +1,21 @@
 ---
-# Frontmatter (Metadaten)
+# Der Code in 'app/page.tsx' erwartet wahrscheinlich dieses 'blocks' Feld.
 
-# Entspricht dem Feld "title" in Ihrer Tina-Konfiguration
+# Ändern Sie dies in den Titel, den Sie sehen möchten:
 title: Die offizielle Homepage von LamaDrama
 
-# Entspricht dem Feld "posted" (oder "date") in Ihrer Tina-Konfiguration
-# WICHTIG: Verwenden Sie hier das exakte Datumsformat (ISO 8601), das Tina erwartet.
-posted: 2025-10-02T18:50:00.000Z
+# Der 'body' (Rich-Text) ist nicht notwendig und führt zu Problemen.
+# Fügen Sie stattdessen eine 'blocks'-Struktur ein, um Ihren Content anzuzeigen.
 
-# Falls Sie ein Feld "author" definiert haben:
-author: Das Lama-Team
+blocks:
+  - _template: hero  # Verwenden Sie hier das Template, das Sie rendern möchten
+    headline: Willkommen bei LamaDrama!
+    tagline: Hier ist mein neuer, einfacher Content.
+    actions: []
 
+  # Fügen Sie hier weitere Blöcke hinzu, die Sie in tina/config.tsx definiert haben.
 ---
-
-# Willkommen auf der Startseite!
-
-Dies ist der **Hauptinhalt (Body)** Ihrer Seite.
-
-Er wird von TinaCMS als **`rich-text`** interpretiert und ermöglicht Ihnen, normalen Markdown-Text zu verwenden.
-
-## Die Vorteile von MDX
-
-Da dies eine `.mdx`-Datei ist, können Sie hier direkt **React-Komponenten** einfügen. Das ist perfekt für Callouts, Hero-Sektionen oder interaktive Elemente.
-
-<CustomButton link="/ueber-uns" label="Mehr über uns" />
-
-Der Build-Prozess sollte diese Datei nun korrekt parsen, da der **Frontmatter-Block** (die Metadaten zwischen den `---`) und der **Hauptinhalt** (der Body) dem TinaCMS-Schema entsprechen.
-
-**Achten Sie auf die Komponenten:** Damit `<CustomButton>` oder andere eigene Komponenten funktionieren, müssen diese in dem Next.js-Code bekannt sein, der den MDX-Inhalt rendert (wie in den Regeln beschrieben).
+# Lassen Sie den Body-Bereich (den Bereich unter den ---) leer,
+# wenn Ihre Collection das isBody: true Feld nicht erwartet,
+# oder fügen Sie ihn nur mit dem Rich-Text-Feld (z.B. 'body') ein,
+# falls Sie den Code in ClientPage.tsx auf das Rendering umgestellt haben.
