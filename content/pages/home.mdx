@@ -1,21 +1,8 @@
 ---
-# Der Code in 'app/page.tsx' erwartet wahrscheinlich dieses 'blocks' Feld.
-
-# Ändern Sie dies in den Titel, den Sie sehen möchten:
-title: Die offizielle Homepage von LamaDrama
-
-# Der 'body' (Rich-Text) ist nicht notwendig und führt zu Problemen.
-# Fügen Sie stattdessen eine 'blocks'-Struktur ein, um Ihren Content anzuzeigen.
-
+title: Test des Callout-Blocks
 blocks:
-  - _template: hero  # Verwenden Sie hier das Template, das Sie rendern möchten
-    headline: Willkommen bei LamaDrama!
-    tagline: Hier ist mein neuer, einfacher Content.
-    actions: []
-
-  # Fügen Sie hier weitere Blöcke hinzu, die Sie in tina/config.tsx definiert haben.
+  - _template: callout # WIR VERWENDEN DEN EINFACHSTEN BLOCK
+    text: "Hallo! Wenn dieser Text angezeigt wird, funktioniert das Rendering der Blöcke."
+    url: "https://tina.io/"
+    background: "" # Kann leer sein
 ---
-# Lassen Sie den Body-Bereich (den Bereich unter den ---) leer,
-# wenn Ihre Collection das isBody: true Feld nicht erwartet,
-# oder fügen Sie ihn nur mit dem Rich-Text-Feld (z.B. 'body') ein,
-# falls Sie den Code in ClientPage.tsx auf das Rendering umgestellt haben.
