@@ -1,17 +1,21 @@
 ---
 # Der YAML-Frontmatter-Block
-title: "Meine tolle neue Homepage-Seite3"
-date: "2025-10-02"
-author: "Max Mustermann"
+[cite_start]title: "Meine tolle neue Homepage-Seite3" [cite: 9]
+[cite_start]date: "2025-10-02" [cite: 9]
+[cite_start]author: "Max Mustermann" [cite: 9]
+
+blocks:
+  - _template: content # Wir verwenden den Content-Block
+    # Das Feld 'body' muss im Schema des content-Blocks existieren
+    body: |
+      # Tabelle über die beliebtheit von Sprachen
+
+      | Name | Prozent | veröffentlicht am |
+      | :--- | :--- | :--- |
+      | Python | [cite_start]30,41% [cite: 12] | 20. [cite_start]Februar 1991 [cite: 13] |
+      | Java | [cite_start]15,12% [cite: 14] | [cite_start]1995 [cite: 15] |
+      | JS | [cite_start]7,93% [cite: 16] | [cite_start]1995 [cite: 17] |
+
+      [Gehe zu Seite 1](/home)
+      [Gehe zu Seite 2](/seite2)
 ---
-
-# Tabelle über die beliebtheit von Sprachen
-
-|Name               | Prozent            | veröffentlicht am
-|-----------------  | -------------------| -------------------
-|Python             | 30,41%             | 20. Februar 1991
-|Java               | 15,12%             | 1995
-|JS                 | 7,93%              | 1995
-
-[Gehe zu Seite 1](index.md)\
-[Gehe zu Seite 2](seite2.md)
