@@ -1,8 +1,23 @@
 ---
 title: Test des Callout-Blocks
 blocks:
-  - _template: callout # WIR VERWENDEN DEN EINFACHSTEN BLOCK
-    text: "Hallo! Wenn dieser Text angezeigt wird, funktioniert das Rendering der Blöcke."
-    url: "https://tina.io/"
-    background: "" # Kann leer sein
+  - background: ''
+    text: >-
+      Hallo! Wenn dieser Text angezeigt wird, funktioniert das Rendering der
+      Blöcke.
+    url: 'https://tina.io/'
+    _template: callout
+  - background: bg-yellow-50/80
+    headline: This Big Text is Totally Awesome
+    tagline: Here's some text above the other text
+    actions:
+      - label: HTL-Bulme
+        type: link
+        icon:
+          name: BiSolidSchool
+          color: orange
+          style: float
+        link: 'https://www.bulme.at/'
+    _template: hero
 ---
+
