@@ -13,12 +13,12 @@
         "label": "Home"
       },
       {
-        "href": "/seite2",
-        "label": "2"
+        "href": "/List",
+        "label": "List"
       },
       {
-        "href": "/seite3",
-        "label": "3"
+        "href": "/Video",
+        "label": "3Video"
       }
     ]
   },
